@@ -1,0 +1,31 @@
+let mongoose = require('mongoose');
+
+module.exports=mongoose.model('statement',{
+    id:{
+        type:Number
+    },
+    personName:{
+        type:String
+    },
+    Date:{
+        type:Number
+    },
+    MobileNo:{
+        type:Number
+    },
+    BrandName:{
+        type:String
+    },
+    ModelNo:{
+        type:String
+    },
+    serviceName:{
+        type:String
+    },
+    Inventory:{
+        type:String
+    },
+    cost:{
+        type:Number
+    }
+})

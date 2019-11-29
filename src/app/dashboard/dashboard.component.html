@@ -1,0 +1,20 @@
+<div class="head">
+    <div class="logo">
+     <h1>Gadget Arena</h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a routerLink='./' (click)="truez()"> <img src="../assets/dashboard-1.png" alt=""> Dashboard</a></li>
+        <li><a routerLink='./coustmer' (click)="falsez()"> <img src="../assets/coustmer.png" alt=""> Coustmer</a></li>
+        <li><a routerLink='./master' (click)="falsez()"> <img src="../assets/master.png" alt=""> Master</a></li>
+        <li><a routerLink='./inventory' (click)="falsez()"> <img src="../assets/inventory.png" alt=""> Inventory</a></li>
+        <li><a routerLink='./statement' (click)="falsez()"> <img src="../assets/statement.png" alt=""> Statement</a></li>
+        <li ><a routerLink='./setting' (click)="falsez()"> <img src="../assets/Settings.png" alt="" > Settings</a></li>
+        <li><a routerLink='../login'(onClick)="logout()" > <img src="../assets/logout.png" alt=""> Logout</a></li>
+      </ul>
+    </div> 
+  </div>
+<router-outlet></router-outlet>
+<div *ngIf="dash == true">
+    <p>works</p>
+</div>
